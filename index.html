@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login-page_demo.css">
+    <link rel="stylesheet" href="css/login-page_style.css">
+    <link rel="stylesheet" href="css/login-page_responsive.css">
+</head>
+
+<body>
+
+    <div class="login-page_container">
+
+        <!--       Sign in Side      -->
+
+        <div class="login-section page-side section-ope">
+            <div class="section-page_intro">
+                <img src="Image/signin-icon-black.png" alt="signin-icon">
+                <p class="section-page-intro_title">Sign In</p>
+            </div>
+
+            <div class="login-form-area">
+                <p class="form-title">Sign In</p>
+                <div class="section-form">
+                    <form class="login-form">
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="email" name="email" autocomplete="off">
+                            <span class="login-page_placeholder">Email</span>
+                        </label>
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="password" name="password">
+                            <span class="login-page_placeholder">Password</span>
+                        </label>
+                        <div class="login-section_submit">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-google fa-fw"></i></a></li>
+                            </ul>
+                            <div class="login-page-submit-btn">
+                                <input type="submit" name="submit-login" value="submit">
+                            </div>
+                        </div>
+                        <div class="login-page_forget">
+                            <a href="">Forget Your Password ?</a>
+                        </div>
+                    </form>
+
+                    <form class="forget-form">
+                        <p class="forget-title">Forget Your Password</p>
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="email" name="email" autocomplete="off">
+                            <span class="login-page_placeholder">Email</span>
+                        </label>
+                        <div class="login-section_submit">
+                            <div class="login-page-submit-btn"><input type="submit" name="submit-login" value="submit"></div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!--       Sign up Side      -->
+
+        <div class="signup-section page-side section-clos">
+            <div class="section-page_intro">
+                <img src="Image/signup-icon.png" alt="signup-icon">
+                <p class="section-page-intro_title">Sign Up</p>
+            </div>
+
+            <div class="signup-form-area">
+                <p class="form-title">Sign Up</p>
+                <div class="section-form">
+                    <form class="signup-form">
+                       <label class="login-page_label">
+                            <input class="login-page_input" type="text" name="username" autocomplete="off">
+                            <span class="login-page_placeholder">Username</span>
+                        </label>
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="email" name="email" autocomplete="off">
+                            <span class="login-page_placeholder">Email</span>
+                        </label>
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="password" name="password">
+                            <span class="login-page_placeholder">Password</span>
+                        </label>
+                        <label class="login-page_label">
+                            <input class="login-page_input" type="password" name="confirm password">
+                            <span class="login-page_placeholder">Confirm Password</span>
+                        </label>
+                        <div class="signup-section_submit">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-google fa-fw"></i></a></li>
+                            </ul>
+                            <div class="login-page-submit-btn">
+                                <input type="submit" name="submit-signup" value="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/login-page_script.js"></script>
+    
+    <script>
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                alert('Can\'t Open Inspect Tool... buy item :)');
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                alert('Can\'t Open Inspect Tool... buy item :)');
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                alert('Can\'t Open Inspect Tool... buy item :)');
+                return false;
+            } else if (event.ctrlKey && event.shiftKey) {
+                alert('Can\'t Open Inspect Tool... buy item :)');
+                return false;
+            }
+        });
+
+        $(document).on("contextmenu", function(e) {
+            e.preventDefault();
+            alert('Can\'t Open Inspect Tool... buy item :)');
+        });
+    </script>
+
+</body>
+
+</html>
